@@ -1,0 +1,105 @@
+.greeting-card {
+    background: linear-gradient(135deg, #ffcc33, #ff6699);
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.greeting-card h1 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.greeting-card p {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.greeting-card button {
+    background-color: #ff6699;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+    .greeting-card button:hover {
+        background-color: #ff3366;
+    }
+
+.message {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    animation: slideIn 1s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.message h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.message p {
+    color: #555;
+}
+
+.message img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scrolling-messages {
+    margin-top: 20px;
+    max-height: 100px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+    .scrolling-messages p {
+        color: #333;
+        font-size: 1.1em;
+        margin: 5px 0;
+    }
